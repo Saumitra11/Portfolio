@@ -12,6 +12,18 @@ toggle.onclick = function () {
   navigation.classList.toggle("active");
   main.classList.toggle("active");
 };
+//Width
+function iWork() {
+  if (document.documentElement.clientWidth < 900) {
+    if (!toggle.classList.contains("active")) {
+      toggle.classList.add("active");
+      topbar.classList.add("active");
+      navigation.classList.add("active");
+      main.classList.add("active");
+    }
+  }
+}
+setInterval(iWork, 100);
 // Email
 let firstName = document.querySelector(".firstName");
 let lastName = document.querySelector(".lastName");
@@ -33,3 +45,14 @@ function sendEmail() {
     button.setAttribute("href", msg);
   }
 }
+// function myFunction(x) {
+//   if (x.matches) {
+//     toggle.classList.remove("active");
+//     topbar.classList.remove("active");
+//     navigation.classList.remove("active");
+//     main.classList.remove("active");
+//   }
+// }
+// var x = window.matchMedia("(max-width: 780px)");
+// myFunction(x);
+// x.addEventListener(myFunction);

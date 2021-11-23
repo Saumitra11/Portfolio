@@ -20,7 +20,7 @@ body {
 .spinner-wrapper {
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: var(--black);
   position: absolute;
   top: 0;
   left: 0;
@@ -47,13 +47,13 @@ body {
 .spinner:before {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(90deg, #fff700 0%, #000 100%);
+  background-image: linear-gradient(90deg, #fff700 0%, var(--black) 100%);
   animation: spin 1s infinite linear;
 }
 .spinner:after {
   width: 90%;
   height: 90%;
-  background-color: #000;
+  background-color: var(--black);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -219,16 +219,6 @@ h3 {
 }
 p {
   color: lightblue;
-}
-.btn {
-  position: relative;
-  display: inline-block;
-  padding: 10px 30px;
-  color: var(--yellow);
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  text-decoration: none;
 }
 .socialMedia {
   position: absolute;
@@ -467,4 +457,129 @@ p {
   bottom: 0;
   padding: 10px 40px;
   text-align: center;
+}
+@media all and (max-width: 900px) {
+  .life .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .life .content .textBox {
+    width: 100%;
+    min-width: 100%;
+  }
+  .life .content .textBox p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .life .content .imgBx {
+    margin-left: 40px;
+  }
+  .life .content .imgBx img {
+    max-width: 100%;
+    text-align: center;
+  }
+  .skills .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .projects .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .contact .contactForm .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .main .topbar .toggle {
+    display: none;
+  }
+  .main .topbar .logo {
+    text-align: center;
+  }
+  .banner {
+    text-align: center;
+  }
+  .copyright {
+    position: relative;
+    bottom: 0;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  .logo {
+    margin-top: 10px;
+    font-size: 1.75em;
+  }
+  .topbar {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 1080px) {
+  .life .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .life .content .textBox {
+    width: 100%;
+    min-width: 100%;
+  }
+  .life .content .textBox p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .life .content .imgBx {
+    margin-left: 40px;
+  }
+  .life .content .imgBx img {
+    max-width: 100%;
+    text-align: center;
+  }
+  .skills .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .projects .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .contact .contactForm .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .banner {
+    text-align: center;
+  }
+  .copyright {
+    position: relative;
+    bottom: 0;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  .logo {
+    margin-top: 10px;
+    font-size: 1.75em;
+  }
 }
