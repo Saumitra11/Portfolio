@@ -458,6 +458,64 @@ p {
   padding: 10px 40px;
   text-align: center;
 }
+@media all and (max-width: 1080px) {
+  .life .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .life .content .textBox {
+    width: 100%;
+    min-width: 100%;
+  }
+  .life .content .textBox p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .life .content .imgBx {
+    margin-left: 40px;
+  }
+  .life .content .imgBx img {
+    max-width: 100%;
+    text-align: center;
+  }
+  .skills .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .projects .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  .contact .contactForm .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .banner {
+    text-align: center;
+  }
+  .copyright {
+    position: relative;
+    bottom: 0;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  .logo {
+    margin-top: 10px;
+    font-size: 1.75em;
+  }
+}
 @media all and (max-width: 900px) {
   .life .content {
     display: flex;
@@ -523,63 +581,5 @@ p {
   }
   .topbar {
     flex-direction: column;
-  }
-}
-@media all and (max-width: 1080px) {
-  .life .content {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    text-align: center;
-  }
-  .life .content .textBox {
-    width: 100%;
-    min-width: 100%;
-  }
-  .life .content .textBox p {
-    margin-top: 10px;
-    text-align: justify;
-  }
-  .life .content .imgBx {
-    margin-left: 40px;
-  }
-  .life .content .imgBx img {
-    max-width: 100%;
-    text-align: center;
-  }
-  .skills .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin: 40px 0;
-  }
-  .projects .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    margin: 40px 0;
-  }
-  .contact .contactForm .row {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
-  }
-  .banner {
-    text-align: center;
-  }
-  .copyright {
-    position: relative;
-    bottom: 0;
-    padding: 10px 40px;
-    text-align: center;
-    font-size: 0.75em;
-  }
-  .logo {
-    margin-top: 10px;
-    font-size: 1.75em;
   }
 }
