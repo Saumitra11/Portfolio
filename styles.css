@@ -292,8 +292,9 @@ p {
 }
 .life .content .imgBx img {
   max-width: 100%;
-  /* max-height: 70%; */
+  /* max-height: 50%; */
 }
+
 .skills .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

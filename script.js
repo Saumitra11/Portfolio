@@ -45,14 +45,3 @@ function sendEmail() {
     button.setAttribute("href", msg);
   }
 }
-// function myFunction(x) {
-//   if (x.matches) {
-//     toggle.classList.remove("active");
-//     topbar.classList.remove("active");
-//     navigation.classList.remove("active");
-//     main.classList.remove("active");
-//   }
-// }
-// var x = window.matchMedia("(max-width: 780px)");
-// myFunction(x);
-// x.addEventListener(myFunction);
